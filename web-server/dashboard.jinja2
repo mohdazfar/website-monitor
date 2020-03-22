@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+    <meta http-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{ title }}</title>
+    </head>
+
+	<body>
+        <div class="content">
+            {% for log in logs %}
+                {% if "[status: OK]" in log %}
+                    <p><font size="3" color="green">{{log}}</font></p>
+                {% else %}
+                    <p><font size="3" color="red">{{log}}</font></p>
+                {% endif %}
+             {% endfor %}
+        </div>
+    </body>
+</html>

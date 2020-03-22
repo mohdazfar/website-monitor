@@ -1,0 +1,21 @@
+{
+  "Records": [
+    {
+      "url": "https://www.verkkokauppa.com",
+      "must_have_string": "tuotealueet"
+    },
+    {
+      "url": "https://www.google.com",
+      "must_have_string": "google-haku"
+    },
+    {
+      "url": "http://www.foobar.com/",
+      "must_have_string": "please login"
+    },
+    {
+      "url": "http://www.f.com/",
+      "must_have_string": "please login"
+    }
+
+  ]
+}

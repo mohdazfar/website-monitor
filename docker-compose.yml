@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  monitor-service:
+    build: ./monitor
+    volumes:
+      - ./monitor:/usr/tmp/app
+
+  website:
+    build: ./web-server
+    ports:
+      - 5000:5000
+    volumes:
+      - ./monitor:/usr/tmp/app
+    depends_on:
+      - monitor-service
